@@ -82,7 +82,6 @@ under the License.
 		<module>flink-container</module>
 		<module>flink-queryable-state</module>
 		<module>flink-tests</module>
-		<module>flink-end-to-end-tests</module>
 		<module>flink-test-utils-parent</module>
 		<module>flink-state-backends</module>
 		<module>flink-dstl</module>
@@ -1516,12 +1515,8 @@ under the License.
 						<exclude>flink-table/flink-table-planner/src/test/resources/**/*.out</exclude>
 						<exclude>flink-table/flink-table-planner/src/test/resources/json/*.json</exclude>
 						<exclude>flink-yarn/src/test/resources/krb5.keytab</exclude>
-						<exclude>flink-end-to-end-tests/test-scripts/test-data/**</exclude>
-						<exclude>flink-end-to-end-tests/test-scripts/docker-hadoop-secure-cluster/config/keystore.jks</exclude>
 						<exclude>flink-connectors/flink-connector-kafka/src/test/resources/**</exclude>
 						<exclude>flink-connectors/flink-connector-hive/src/test/resources/**</exclude>
-						<exclude>flink-end-to-end-tests/flink-tpcds-test/tpcds-tool/answer_set/*</exclude>
-						<exclude>flink-end-to-end-tests/flink-tpcds-test/tpcds-tool/query/*</exclude>
 						<exclude>flink-connectors/flink-connector-aws-base/src/test/resources/profile</exclude>
 						<exclude>flink-connectors/flink-connector-kinesis/src/test/resources/profile</exclude>
 						<exclude>flink-connectors/flink-connector-aws-kinesis-streams/src/test/resources/profile</exclude>
@@ -1544,8 +1539,6 @@ under the License.
 						<exclude>flink-core/src/test/resources/type-without-avro-serialized-using-kryo</exclude>
 						<exclude>flink-formats/flink-avro/src/test/resources/flink-1.4-serializer-java-serialized</exclude>
 
-						<exclude>flink-end-to-end-tests/flink-state-evolution-test/src/main/java/org/apache/flink/avro/generated/*</exclude>
-						<exclude>flink-end-to-end-tests/flink-state-evolution-test/savepoints/*</exclude>
 						<exclude>flink-formats/flink-avro/src/test/resources/testdata.avro</exclude>
 						<exclude>flink-formats/flink-avro/src/test/java/org/apache/flink/formats/avro/generated/*.java</exclude>
 						<exclude>flink-formats/flink-avro-confluent-registry/src/test/resources/*.json</exclude>
@@ -1583,8 +1576,6 @@ under the License.
 						<!-- PyCharm -->
 						<exclude>**/.idea/**</exclude>
 						<!-- Generated code via Avro -->
-						<exclude>flink-end-to-end-tests/flink-confluent-schema-registry/src/main/java/example/avro/**</exclude>
-						<exclude>flink-end-to-end-tests/flink-datastream-allround-test/src/main/java/org/apache/flink/streaming/tests/avro/**</exclude>
 
 						<!-- flink-python -->
 						<exclude>flink-python/lib/**</exclude>
@@ -2228,7 +2219,6 @@ under the License.
 						<skipProvidedScope>true</skipProvidedScope>
 						<excludes>
 							<exclude>*flink-docs</exclude>
-							<exclude>*flink-end-to-end-tests</exclude>
 							<exclude>*flink-fs-tests*</exclude>
 							<exclude>*flink-yarn-tests*</exclude>
 						</excludes>
